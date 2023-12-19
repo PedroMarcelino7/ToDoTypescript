@@ -9,14 +9,15 @@ type Props = {
 const Modal = ({ handleModalChange, children }: Props) => {
     return (
         <div>
-            <div className={styles.fade}></div>
-            <div className={styles.modal}>
-                <div className={styles.close} onClick={handleModalChange}>
-                    <i className='bi bi-x-square-fill'></i>
-                </div>
+            <div className={styles.fade}>
+                <div className={styles.modal}>
+                    <div className={styles.close} onClick={handleModalChange}>
+                        <i className='bi bi-x-square-fill'></i>
+                    </div>
 
-                <h2>Texto do modal</h2>
-                {children}
+                    <h2>Texto do modal</h2>
+                    {children}
+                </div>
             </div>
         </div>
     )
