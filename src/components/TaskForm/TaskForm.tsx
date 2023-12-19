@@ -15,6 +15,7 @@ type Props = {
 
 const Label = styled.label<{ color: string }>`
   color: ${(props) => props.color};
+  font-size: 1.5rem;
 `;
 
 const TaskForm = ({ btnText, taskList, setTaskList, labelColor, task, handleUpdate }: Props) => {
@@ -61,6 +62,7 @@ const TaskForm = ({ btnText, taskList, setTaskList, labelColor, task, handleUpda
                 <Label htmlFor="title" color={labelColor}>Título:</Label>
                 <input
                     type="text"
+                    id='title'
                     name='title'
                     placeholder='Título da tarefa'
                     onChange={handleChange}
@@ -72,6 +74,7 @@ const TaskForm = ({ btnText, taskList, setTaskList, labelColor, task, handleUpda
                 <input
                     type="number"
                     name='difficulty'
+                    id='difficulty'
                     placeholder='Dificuldade da tarefa'
                     onChange={handleChange}
                     value={difficulty}

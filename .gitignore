@@ -22,3 +22,17 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#ALTERAÇÕES
+ - Trocar o input de dificuldade para select
+
+<select name="difficulty" id="difficulty">
+    <option value={0} disabled>Select difficulty</option>
+    <option value={1}>1</option>
+    <option value={2}>2</option>
+    <option value={3}>3</option>
+    <option value={4}>4</option>
+    <option value={5}>5</option>
+</select>
+
+ - Arrumar posição do modal

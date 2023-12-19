@@ -2,9 +2,12 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  min-height: 60vh;
+  min-height: 65vh;
+  margin-block: 3rem;
 }
 
 .main h2 {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
+  margin-top: 3.5rem;
+  font-size: 2.5rem;
 }

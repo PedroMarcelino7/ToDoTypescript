@@ -3,5 +3,15 @@
     font-size: 2rem;
     background-color: #202020;
     text-align: center;
-    padding-block: 1.5rem;
+    padding-block: 2.5rem;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    line-height: 0.7rem;
+    color: #3197b3;
 }

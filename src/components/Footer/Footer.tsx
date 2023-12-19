@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <p>
-                <span>React + Ts | To Do</span> @ 2021
+                <span>To Do list with <span className={styles.highlight}>React</span> / <span className={styles.highlight}>Typescript</span></span>
             </p>
         </footer>
     )

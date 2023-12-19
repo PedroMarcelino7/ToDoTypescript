@@ -16,10 +16,11 @@
     margin-bottom: 0.5rem;
 }
 
-.form input {
+.form input, select {
     padding: 8px 15px;
     margin-bottom: 1.5rem;
-    border-radius: 0;
+    border-radius: 5px;
+    font-size: 1rem;
     border: 1px solid #282c34;
 }
 
