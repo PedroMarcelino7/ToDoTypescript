@@ -3,13 +3,18 @@ import styles from './Modal.module.css'
 
 type Props = {
     children: React.ReactNode
+    handleModalChange: () => void
 }
 
-const Modal = ({ children }: Props) => {
+const Modal = ({ handleModalChange, children }: Props) => {
     return (
-        <div id='modal'>
+        <div>
             <div className={styles.fade}></div>
             <div className={styles.modal}>
+                <div className={styles.close} onClick={handleModalChange}>
+                    <i className='bi bi-x-square-fill'></i>
+                </div>
+
                 <h2>Texto do modal</h2>
                 {children}
             </div>

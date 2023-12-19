@@ -10,6 +10,7 @@ import Modal from './components/Modal/Modal'
 function App() {
 
   const [taskList, setTaskList] = useState<ITask[]>([])
+  const [showModal, setShowModal] = useState<Boolean>(false)
 
   const deleteTask = (id: number) => {
     setTaskList(
@@ -19,9 +20,13 @@ function App() {
     )
   }
 
+  const handleModalChange = () => {
+    setShowModal(!showModal)
+  }
+
   return (
     <>
-      <Modal children={<TaskForm btnText='Editar tarefa' taskList={taskList} labelColor='#282c34' />} />
+      {showModal && <Modal handleModalChange={handleModalChange} children={<TaskForm btnText='Editar tarefa' taskList={taskList} labelColor='#282c34' />} />}
 
       <Header />
 
@@ -33,7 +38,7 @@ function App() {
 
         <div>
           <h2>Suas tarefas:</h2>
-          <TaskList taskList={taskList} handleDelete={deleteTask} />
+          <TaskList handleModalChange={handleModalChange} taskList={taskList} handleDelete={deleteTask} />
         </div>
       </div>
 

@@ -6,9 +6,10 @@ import { ITask } from '../../interfaces/Task'
 type Props = {
   taskList: ITask[]
   handleDelete(id: number): void
+  handleModalChange: () => void
 }
 
-const TaskList = ({ taskList, handleDelete }: Props) => {
+const TaskList = ({ taskList, handleDelete, handleModalChange }: Props) => {
   return (
     <>
       {taskList.length > 0 ?
@@ -20,7 +21,7 @@ const TaskList = ({ taskList, handleDelete }: Props) => {
             </div>
 
             <div className={styles.actions}>
-              <i className='bi bi-pencil'></i>
+              <i className='bi bi-pencil' onClick={handleModalChange} ></i>
               <i className='bi bi-trash' onClick={() => handleDelete(task.id)}></i>
             </div>
           </div>
