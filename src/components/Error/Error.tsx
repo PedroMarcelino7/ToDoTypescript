@@ -1,9 +1,6 @@
-import React from 'react'
 import styles from './Error.module.css'
 
-type Props = {}
-
-const Error = (props: Props) => {
+const Error = () => {
     return (
         <div className={styles.error_container}>
             <div className={styles.error}>
