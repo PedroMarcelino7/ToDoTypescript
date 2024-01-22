@@ -59,23 +59,23 @@ const TaskForm = ({ btnText, taskList, setTaskList, labelColor, task, handleUpda
     return (
         <form className={styles.form} onSubmit={addTaskHandler}>
             <div className={styles.input_container}>
-                <Label htmlFor="title" color={labelColor}>Título:</Label>
+                <Label htmlFor="title" color={labelColor}>Title:</Label>
                 <input
                     type="text"
                     id='title'
                     name='title'
-                    placeholder='Título da tarefa'
+                    placeholder='Task title'
                     onChange={handleChange}
                     value={title}
                 />
             </div>
             <div className={styles.input_container}>
-                <Label htmlFor="difficulty" color={labelColor}>Dificuldade:</Label>
+                <Label htmlFor="difficulty" color={labelColor}>Difficulty:</Label>
                 <input
                     type="number"
                     name='difficulty'
                     id='difficulty'
-                    placeholder='Dificuldade da tarefa'
+                    placeholder='task difficulty'
                     onChange={handleChange}
                     value={difficulty}
                 />

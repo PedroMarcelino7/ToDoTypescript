@@ -23,16 +23,23 @@ dist-ssr
 *.sln
 *.sw?
 
+# BOTAO DE REDIRECT PARA O PORTFOLIO
 #ALTERAÇÕES
- - Trocar o input de dificuldade para select
+#1. Trocar o input de dificuldade para select
 
-<select name="difficulty" id="difficulty">
-    <option value={0} disabled>Select difficulty</option>
-    <option value={1}>1</option>
-    <option value={2}>2</option>
-    <option value={3}>3</option>
-    <option value={4}>4</option>
-    <option value={5}>5</option>
-</select>
+#EXEMPLO
+#<select name="difficulty" id="difficulty">
+#    <option value={0} disabled>Select difficulty</option>
+#    <option value={1}>1</option>
+#    <option value={2}>2</option>
+#    <option value={3}>3</option>
+#    <option value={4}>4</option>
+#    <option value={5}>5</option>
+#</select>
 
- - Arrumar posição do modal
+
+#2. Arrumar posição do modal
+
+#3. Validar o titulo da task (se for '' não deixar criar atividade)
+
+#4. TRADUZIR TUDO PARA INGLES

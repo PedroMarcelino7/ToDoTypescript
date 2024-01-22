@@ -4,7 +4,7 @@ const Error = () => {
     return (
         <div className={styles.error_container}>
             <div className={styles.error}>
-                <h1>Nenhuma atividade registrada</h1>
+                <h1>No activity registered</h1>
             </div>
         </div>
     )

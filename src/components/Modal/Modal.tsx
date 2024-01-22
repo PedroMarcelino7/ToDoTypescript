@@ -15,7 +15,6 @@ const Modal = ({ handleModalChange, children }: Props) => {
                         <i className='bi bi-x-square-fill'></i>
                     </div>
 
-                    <h2>Texto do modal</h2>
                     {children}
                 </div>
             </div>

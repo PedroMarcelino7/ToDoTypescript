@@ -58,7 +58,7 @@ function App() {
           handleModalChange={handleModalChange}
           children={
             <TaskForm
-              btnText='Editar tarefa'
+              btnText='Edit task'
               taskList={taskList}
               labelColor='#282c34'
               task={taskToUpdate}
@@ -70,9 +70,9 @@ function App() {
 
       <div className={styles.main}>
         <div>
-          <h2>O que você vai fazer?</h2>
+          <h2>What will you do?</h2>
           <TaskForm
-            btnText='Criar tarefa'
+            btnText='Create task'
             taskList={taskList}
             setTaskList={setTaskList}
             labelColor='#fff'
@@ -80,7 +80,7 @@ function App() {
         </div>
 
         <div>
-          <h2>Suas tarefas:</h2>
+          <h2>Your tasks:</h2>
           {showError && <Error />}
           <TaskList
             taskList={taskList}
